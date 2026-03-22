@@ -1,0 +1,829 @@
+[00:00:01.202] Server  LOG     ✓ Ready in 773ms
+[00:00:32.609] Server  ERROR   ⨯ ./outbounding_automation/apps/frontend/app/components/ChatPanel.jsx:4:1
+Module not found: Can't resolve 'lucide-react'
+  2 |
+  3 | import { useState, useRef, useEffect } from "react";
+> 4 | import { Send, Loader2 } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | const BACKEND_URL = "http://localhost:4000";
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./outbounding_automation/apps/frontend/app/components/ChatPanel.jsx [Client Component Browser]
+    ./outbounding_automation/apps/frontend/app/message/[id]/page.js [Client Component Browser]
+    ./outbounding_automation/apps/frontend/app/message/[id]/page.js [Server Component]
+
+  Client Component SSR:
+    ./outbounding_automation/apps/frontend/app/components/ChatPanel.jsx [Client Component SSR]
+    ./outbounding_automation/apps/frontend/app/message/[id]/page.js [Client Component SSR]
+    ./outbounding_automation/apps/frontend/app/message/[id]/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./outbounding_automation/apps/frontend/app/components/Navbar.jsx:3:1
+Module not found: Can't resolve 'lucide-react'
+  1 | "use client";
+  2 |
+> 3 | import { Bell, Plus, ChevronDown, Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { useState } from "react";
+  5 |
+  6 | export default function Navbar() {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./outbounding_automation/apps/frontend/app/components/Navbar.jsx [Client Component Browser]
+    ./outbounding_automation/apps/frontend/app/components/AppShell.jsx [Client Component Browser]
+    ./outbounding_automation/apps/frontend/app/components/AppShell.jsx [Server Component]
+    ./outbounding_automation/apps/frontend/app/layout.js [Server Component]
+
+  Client Component SSR:
+    ./outbounding_automation/apps/frontend/app/components/Navbar.jsx [Client Component SSR]
+    ./outbounding_automation/apps/frontend/app/components/AppShell.jsx [Client Component SSR]
+    ./outbounding_automation/apps/frontend/app/components/AppShell.jsx [Server Component]
+    ./outbounding_automation/apps/frontend/app/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./outbounding_automation/apps/frontend/app/components/Sidebar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+   3 | import Link from "next/link";
+   4 | import { usePathname } from "next/navigation";
+>  5 | import {
+     | ^^^^^^^^
+>  6 |   Home, CalendarDays, FileText, Megaphone,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  7 |   BarChart3, Building2, Settings, LayoutGrid, HelpCircle,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  8 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | // navegacion principal del sidebar
+  11 | const navItems = [
+
+
+
+Import traces:
+  Client Component Browser:
+    ./outbounding_automation/apps/frontend/app/components/Sidebar.jsx [Client Component Browser]
+    ./outbounding_automation/apps/frontend/app/components/AppShell.jsx [Client Component Browser]
+    ./outbounding_automation/apps/frontend/app/components/AppShell.jsx [Server Component]
+    ./outbounding_automation/apps/frontend/app/layout.js [Server Component]
+
+  Client Component SSR:
+    ./outbounding_automation/apps/frontend/app/components/Sidebar.jsx [Client Component SSR]
+    ./outbounding_automation/apps/frontend/app/components/AppShell.jsx [Client Component SSR]
+    ./outbounding_automation/apps/frontend/app/components/AppShell.jsx [Server Component]
+    ./outbounding_automation/apps/frontend/app/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./outbounding_automation/apps/frontend/app/components/TagsPanel.jsx:4:1
+Module not found: Can't resolve 'lucide-react'
+  2 |
+  3 | import { useState } from "react";
+> 4 | import { Sparkles, ChevronDown, ChevronRight } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | const opcionesTono = [
+  7 |   { valor: "urgente", label: "Urgente", desc: "Crea sentido de urgencia para actuar rapido" },
+
+
+
+Import traces:
+  Client Component Browser:
+    ./outbounding_automation/apps/frontend/app/components/TagsPanel.jsx [Client Component Browser]
+    ./outbounding_automation/apps/frontend/app/message/[id]/page.js [Client Component Browser]
+    ./outbounding_automation/apps/frontend/app/message/[id]/page.js [Server Component]
+
+  Client Component SSR:
+    ./outbounding_automation/apps/frontend/app/components/TagsPanel.jsx [Client Component SSR]
+    ./outbounding_automation/apps/frontend/app/message/[id]/page.js [Client Component SSR]
+    ./outbounding_automation/apps/frontend/app/message/[id]/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./outbounding_automation/apps/frontend/app/message/[id]/page.js:6:1
+Module not found: Can't resolve 'lucide-react'
+  4 | import { useParams } from "next/navigation";
+  5 | import Link from "next/link";
+> 6 | import { ArrowLeft, Sparkles, Send } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import ChatPanel from "../../components/ChatPanel";
+  8 | import TagsPanel from "../../components/TagsPanel";
+  9 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./outbounding_automation/apps/frontend/app/message/[id]/page.js [Client Component Browser]
+    ./outbounding_automation/apps/frontend/app/message/[id]/page.js [Server Component]
+
+  Client Component SSR:
+    ./outbounding_automation/apps/frontend/app/message/[id]/page.js [Client Component SSR]
+    ./outbounding_automation/apps/frontend/app/message/[id]/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:00:34.262] Browser ERROR   uncaughtError: Error: ./outbounding_automation/apps/frontend/app/components/ChatPanel.jsx:4:1
+Module not found: Can't resolve 'lucide-react'
+  2 |
+  3 | import { useState, useRef, useEffect } from "react";
+> 4 | import { Send, Loader2 } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | const BACKEND_URL = "http://localhost:4000";
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./outbounding_automation/apps/frontend/app/components/ChatPanel.jsx [Client Component Browser]
+    ./outbounding_automation/apps/frontend/app/message/[id]/page.js [Client Component Browser]
+    ./outbounding_automation/apps/frontend/app/message/[id]/page.js [Server Component]
+
+  Client Component SSR:
+    ./outbounding_automation/apps/frontend/app/components/ChatPanel.jsx [Client Component SSR]
+    ./outbounding_automation/apps/frontend/app/message/[id]/page.js [Client Component SSR]
+    ./outbounding_automation/apps/frontend/app/message/[id]/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:00:34.540] Browser ERROR   ./outbounding_automation/apps/frontend/app/components/ChatPanel.jsx:4:1
+Module not found: Can't resolve 'lucide-react'
+  2 |
+  3 | import { useState, useRef, useEffect } from "react";
+> 4 | import { Send, Loader2 } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | const BACKEND_URL = "http://localhost:4000";
+  7 |
+
+Import traces:
+  Client Component Browser:
+    ./outbounding_automation/apps/frontend/app/components/ChatPanel.jsx [Client Component Browser]
+    ./outbounding_automation/apps/frontend/app/message/[id]/page.js [Client Component Browser]
+    ./outbounding_automation/apps/frontend/app/message/[id]/page.js [Server Component]
+
+  Client Component SSR:
+    ./outbounding_automation/apps/frontend/app/components/ChatPanel.jsx [Client Component SSR]
+    ./outbounding_automation/apps/frontend/app/message/[id]/page.js [Client Component SSR]
+    ./outbounding_automation/apps/frontend/app/message/[id]/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:34.540] Browser ERROR   ./outbounding_automation/apps/frontend/app/components/Navbar.jsx:3:1
+Module not found: Can't resolve 'lucide-react'
+  1 | "use client";
+  2 |
+> 3 | import { Bell, Plus, ChevronDown, Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { useState } from "react";
+  5 |
+  6 | export default function Navbar() {
+
+Import traces:
+  Client Component Browser:
+    ./outbounding_automation/apps/frontend/app/components/Navbar.jsx [Client Component Browser]
+    ./outbounding_automation/apps/frontend/app/components/AppShell.jsx [Client Component Browser]
+    ./outbounding_automation/apps/frontend/app/components/AppShell.jsx [Server Component]
+    ./outbounding_automation/apps/frontend/app/layout.js [Server Component]
+
+  Client Component SSR:
+    ./outbounding_automation/apps/frontend/app/components/Navbar.jsx [Client Component SSR]
+    ./outbounding_automation/apps/frontend/app/components/AppShell.jsx [Client Component SSR]
+    ./outbounding_automation/apps/frontend/app/components/AppShell.jsx [Server Component]
+    ./outbounding_automation/apps/frontend/app/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:34.540] Browser ERROR   ./outbounding_automation/apps/frontend/app/components/Sidebar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+   3 | import Link from "next/link";
+   4 | import { usePathname } from "next/navigation";
+>  5 | import {
+     | ^^^^^^^^
+>  6 |   Home, CalendarDays, FileText, Megaphone,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  7 |   BarChart3, Building2, Settings, LayoutGrid, HelpCircle,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  8 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | // navegacion principal del sidebar
+  11 | const navItems = [
+
+Import traces:
+  Client Component Browser:
+    ./outbounding_automation/apps/frontend/app/components/Sidebar.jsx [Client Component Browser]
+    ./outbounding_automation/apps/frontend/app/components/AppShell.jsx [Client Component Browser]
+    ./outbounding_automation/apps/frontend/app/components/AppShell.jsx [Server Component]
+    ./outbounding_automation/apps/frontend/app/layout.js [Server Component]
+
+  Client Component SSR:
+    ./outbounding_automation/apps/frontend/app/components/Sidebar.jsx [Client Component SSR]
+    ./outbounding_automation/apps/frontend/app/components/AppShell.jsx [Client Component SSR]
+    ./outbounding_automation/apps/frontend/app/components/AppShell.jsx [Server Component]
+    ./outbounding_automation/apps/frontend/app/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:34.540] Browser ERROR   ./outbounding_automation/apps/frontend/app/components/TagsPanel.jsx:4:1
+Module not found: Can't resolve 'lucide-react'
+  2 |
+  3 | import { useState } from "react";
+> 4 | import { Sparkles, ChevronDown, ChevronRight } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | const opcionesTono = [
+  7 |   { valor: "urgente", label: "Urgente", desc: "Crea sentido de urgencia para actuar rapido" },
+
+Import traces:
+  Client Component Browser:
+    ./outbounding_automation/apps/frontend/app/components/TagsPanel.jsx [Client Component Browser]
+    ./outbounding_automation/apps/frontend/app/message/[id]/page.js [Client Component Browser]
+    ./outbounding_automation/apps/frontend/app/message/[id]/page.js [Server Component]
+
+  Client Component SSR:
+    ./outbounding_automation/apps/frontend/app/components/TagsPanel.jsx [Client Component SSR]
+    ./outbounding_automation/apps/frontend/app/message/[id]/page.js [Client Component SSR]
+    ./outbounding_automation/apps/frontend/app/message/[id]/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:34.540] Browser ERROR   ./outbounding_automation/apps/frontend/app/message/[id]/page.js:6:1
+Module not found: Can't resolve 'lucide-react'
+  4 | import { useParams } from "next/navigation";
+  5 | import Link from "next/link";
+> 6 | import { ArrowLeft, Sparkles, Send } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import ChatPanel from "../../components/ChatPanel";
+  8 | import TagsPanel from "../../components/TagsPanel";
+  9 |
+
+Import traces:
+  Client Component Browser:
+    ./outbounding_automation/apps/frontend/app/message/[id]/page.js [Client Component Browser]
+    ./outbounding_automation/apps/frontend/app/message/[id]/page.js [Server Component]
+
+  Client Component SSR:
+    ./outbounding_automation/apps/frontend/app/message/[id]/page.js [Client Component SSR]
+    ./outbounding_automation/apps/frontend/app/message/[id]/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:34.540] Browser ERROR   ./outbounding_automation/apps/frontend/app/components/ChatPanel.jsx:4:1
+Module not found: Can't resolve 'lucide-react'
+  2 |
+  3 | import { useState, useRef, useEffect } from "react";
+> 4 | import { Send, Loader2 } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | const BACKEND_URL = "http://localhost:4000";
+  7 |
+
+Import traces:
+  Client Component Browser:
+    ./outbounding_automation/apps/frontend/app/components/ChatPanel.jsx [Client Component Browser]
+    ./outbounding_automation/apps/frontend/app/message/[id]/page.js [Client Component Browser]
+    ./outbounding_automation/apps/frontend/app/message/[id]/page.js [Server Component]
+
+  Client Component SSR:
+    ./outbounding_automation/apps/frontend/app/components/ChatPanel.jsx [Client Component SSR]
+    ./outbounding_automation/apps/frontend/app/message/[id]/page.js [Client Component SSR]
+    ./outbounding_automation/apps/frontend/app/message/[id]/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:34.540] Browser ERROR   ./outbounding_automation/apps/frontend/app/components/Navbar.jsx:3:1
+Module not found: Can't resolve 'lucide-react'
+  1 | "use client";
+  2 |
+> 3 | import { Bell, Plus, ChevronDown, Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { useState } from "react";
+  5 |
+  6 | export default function Navbar() {
+
+Import traces:
+  Client Component Browser:
+    ./outbounding_automation/apps/frontend/app/components/Navbar.jsx [Client Component Browser]
+    ./outbounding_automation/apps/frontend/app/components/AppShell.jsx [Client Component Browser]
+    ./outbounding_automation/apps/frontend/app/components/AppShell.jsx [Server Component]
+    ./outbounding_automation/apps/frontend/app/layout.js [Server Component]
+
+  Client Component SSR:
+    ./outbounding_automation/apps/frontend/app/components/Navbar.jsx [Client Component SSR]
+    ./outbounding_automation/apps/frontend/app/components/AppShell.jsx [Client Component SSR]
+    ./outbounding_automation/apps/frontend/app/components/AppShell.jsx [Server Component]
+    ./outbounding_automation/apps/frontend/app/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:34.540] Browser ERROR   ./outbounding_automation/apps/frontend/app/components/Sidebar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+   3 | import Link from "next/link";
+   4 | import { usePathname } from "next/navigation";
+>  5 | import {
+     | ^^^^^^^^
+>  6 |   Home, CalendarDays, FileText, Megaphone,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  7 |   BarChart3, Building2, Settings, LayoutGrid, HelpCircle,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  8 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | // navegacion principal del sidebar
+  11 | const navItems = [
+
+Import traces:
+  Client Component Browser:
+    ./outbounding_automation/apps/frontend/app/components/Sidebar.jsx [Client Component Browser]
+    ./outbounding_automation/apps/frontend/app/components/AppShell.jsx [Client Component Browser]
+    ./outbounding_automation/apps/frontend/app/components/AppShell.jsx [Server Component]
+    ./outbounding_automation/apps/frontend/app/layout.js [Server Component]
+
+  Client Component SSR:
+    ./outbounding_automation/apps/frontend/app/components/Sidebar.jsx [Client Component SSR]
+    ./outbounding_automation/apps/frontend/app/components/AppShell.jsx [Client Component SSR]
+    ./outbounding_automation/apps/frontend/app/components/AppShell.jsx [Server Component]
+    ./outbounding_automation/apps/frontend/app/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:34.540] Browser ERROR   ./outbounding_automation/apps/frontend/app/components/TagsPanel.jsx:4:1
+Module not found: Can't resolve 'lucide-react'
+  2 |
+  3 | import { useState } from "react";
+> 4 | import { Sparkles, ChevronDown, ChevronRight } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | const opcionesTono = [
+  7 |   { valor: "urgente", label: "Urgente", desc: "Crea sentido de urgencia para actuar rapido" },
+
+Import traces:
+  Client Component Browser:
+    ./outbounding_automation/apps/frontend/app/components/TagsPanel.jsx [Client Component Browser]
+    ./outbounding_automation/apps/frontend/app/message/[id]/page.js [Client Component Browser]
+    ./outbounding_automation/apps/frontend/app/message/[id]/page.js [Server Component]
+
+  Client Component SSR:
+    ./outbounding_automation/apps/frontend/app/components/TagsPanel.jsx [Client Component SSR]
+    ./outbounding_automation/apps/frontend/app/message/[id]/page.js [Client Component SSR]
+    ./outbounding_automation/apps/frontend/app/message/[id]/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:34.540] Browser ERROR   ./outbounding_automation/apps/frontend/app/message/[id]/page.js:6:1
+Module not found: Can't resolve 'lucide-react'
+  4 | import { useParams } from "next/navigation";
+  5 | import Link from "next/link";
+> 6 | import { ArrowLeft, Sparkles, Send } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import ChatPanel from "../../components/ChatPanel";
+  8 | import TagsPanel from "../../components/TagsPanel";
+  9 |
+
+Import traces:
+  Client Component Browser:
+    ./outbounding_automation/apps/frontend/app/message/[id]/page.js [Client Component Browser]
+    ./outbounding_automation/apps/frontend/app/message/[id]/page.js [Server Component]
+
+  Client Component SSR:
+    ./outbounding_automation/apps/frontend/app/message/[id]/page.js [Client Component SSR]
+    ./outbounding_automation/apps/frontend/app/message/[id]/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:34.649] Browser ERROR   ./outbounding_automation/apps/frontend/app/components/ChatPanel.jsx:4:1
+Module not found: Can't resolve 'lucide-react'
+  2 |
+  3 | import { useState, useRef, useEffect } from "react";
+> 4 | import { Send, Loader2 } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | const BACKEND_URL = "http://localhost:4000";
+  7 |
+
+Import traces:
+  Client Component Browser:
+    ./outbounding_automation/apps/frontend/app/components/ChatPanel.jsx [Client Component Browser]
+    ./outbounding_automation/apps/frontend/app/message/[id]/page.js [Client Component Browser]
+    ./outbounding_automation/apps/frontend/app/message/[id]/page.js [Server Component]
+
+  Client Component SSR:
+    ./outbounding_automation/apps/frontend/app/components/ChatPanel.jsx [Client Component SSR]
+    ./outbounding_automation/apps/frontend/app/message/[id]/page.js [Client Component SSR]
+    ./outbounding_automation/apps/frontend/app/message/[id]/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:34.649] Browser ERROR   ./outbounding_automation/apps/frontend/app/components/Navbar.jsx:3:1
+Module not found: Can't resolve 'lucide-react'
+  1 | "use client";
+  2 |
+> 3 | import { Bell, Plus, ChevronDown, Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { useState } from "react";
+  5 |
+  6 | export default function Navbar() {
+
+Import traces:
+  Client Component Browser:
+    ./outbounding_automation/apps/frontend/app/components/Navbar.jsx [Client Component Browser]
+    ./outbounding_automation/apps/frontend/app/components/AppShell.jsx [Client Component Browser]
+    ./outbounding_automation/apps/frontend/app/components/AppShell.jsx [Server Component]
+    ./outbounding_automation/apps/frontend/app/layout.js [Server Component]
+
+  Client Component SSR:
+    ./outbounding_automation/apps/frontend/app/components/Navbar.jsx [Client Component SSR]
+    ./outbounding_automation/apps/frontend/app/components/AppShell.jsx [Client Component SSR]
+    ./outbounding_automation/apps/frontend/app/components/AppShell.jsx [Server Component]
+    ./outbounding_automation/apps/frontend/app/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:34.649] Browser ERROR   ./outbounding_automation/apps/frontend/app/components/Sidebar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+   3 | import Link from "next/link";
+   4 | import { usePathname } from "next/navigation";
+>  5 | import {
+     | ^^^^^^^^
+>  6 |   Home, CalendarDays, FileText, Megaphone,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  7 |   BarChart3, Building2, Settings, LayoutGrid, HelpCircle,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  8 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | // navegacion principal del sidebar
+  11 | const navItems = [
+
+Import traces:
+  Client Component Browser:
+    ./outbounding_automation/apps/frontend/app/components/Sidebar.jsx [Client Component Browser]
+    ./outbounding_automation/apps/frontend/app/components/AppShell.jsx [Client Component Browser]
+    ./outbounding_automation/apps/frontend/app/components/AppShell.jsx [Server Component]
+    ./outbounding_automation/apps/frontend/app/layout.js [Server Component]
+
+  Client Component SSR:
+    ./outbounding_automation/apps/frontend/app/components/Sidebar.jsx [Client Component SSR]
+    ./outbounding_automation/apps/frontend/app/components/AppShell.jsx [Client Component SSR]
+    ./outbounding_automation/apps/frontend/app/components/AppShell.jsx [Server Component]
+    ./outbounding_automation/apps/frontend/app/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:34.649] Browser ERROR   ./outbounding_automation/apps/frontend/app/components/TagsPanel.jsx:4:1
+Module not found: Can't resolve 'lucide-react'
+  2 |
+  3 | import { useState } from "react";
+> 4 | import { Sparkles, ChevronDown, ChevronRight } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | const opcionesTono = [
+  7 |   { valor: "urgente", label: "Urgente", desc: "Crea sentido de urgencia para actuar rapido" },
+
+Import traces:
+  Client Component Browser:
+    ./outbounding_automation/apps/frontend/app/components/TagsPanel.jsx [Client Component Browser]
+    ./outbounding_automation/apps/frontend/app/message/[id]/page.js [Client Component Browser]
+    ./outbounding_automation/apps/frontend/app/message/[id]/page.js [Server Component]
+
+  Client Component SSR:
+    ./outbounding_automation/apps/frontend/app/components/TagsPanel.jsx [Client Component SSR]
+    ./outbounding_automation/apps/frontend/app/message/[id]/page.js [Client Component SSR]
+    ./outbounding_automation/apps/frontend/app/message/[id]/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:34.649] Browser ERROR   ./outbounding_automation/apps/frontend/app/message/[id]/page.js:6:1
+Module not found: Can't resolve 'lucide-react'
+  4 | import { useParams } from "next/navigation";
+  5 | import Link from "next/link";
+> 6 | import { ArrowLeft, Sparkles, Send } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import ChatPanel from "../../components/ChatPanel";
+  8 | import TagsPanel from "../../components/TagsPanel";
+  9 |
+
+Import traces:
+  Client Component Browser:
+    ./outbounding_automation/apps/frontend/app/message/[id]/page.js [Client Component Browser]
+    ./outbounding_automation/apps/frontend/app/message/[id]/page.js [Server Component]
+
+  Client Component SSR:
+    ./outbounding_automation/apps/frontend/app/message/[id]/page.js [Client Component SSR]
+    ./outbounding_automation/apps/frontend/app/message/[id]/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:04:18.289] Server  ERROR   ⨯ ./outbounding_automation/apps/frontend/app/components/Navbar.jsx:3:1
+Module not found: Can't resolve 'lucide-react'
+  1 | "use client";
+  2 |
+> 3 | import { Bell, Plus, ChevronDown, Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { useState } from "react";
+  5 |
+  6 | export default function Navbar() {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./outbounding_automation/apps/frontend/app/components/Navbar.jsx [Client Component Browser]
+    ./outbounding_automation/apps/frontend/app/components/AppShell.jsx [Client Component Browser]
+    ./outbounding_automation/apps/frontend/app/components/AppShell.jsx [Server Component]
+    ./outbounding_automation/apps/frontend/app/layout.js [Server Component]
+
+  Client Component SSR:
+    ./outbounding_automation/apps/frontend/app/components/Navbar.jsx [Client Component SSR]
+    ./outbounding_automation/apps/frontend/app/components/AppShell.jsx [Client Component SSR]
+    ./outbounding_automation/apps/frontend/app/components/AppShell.jsx [Server Component]
+    ./outbounding_automation/apps/frontend/app/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./outbounding_automation/apps/frontend/app/components/Sidebar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+   3 | import Link from "next/link";
+   4 | import { usePathname } from "next/navigation";
+>  5 | import {
+     | ^^^^^^^^
+>  6 |   Home, CalendarDays, FileText, Megaphone,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  7 |   BarChart3, Building2, Settings, LayoutGrid, HelpCircle,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  8 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | // navegacion principal del sidebar
+  11 | const navItems = [
+
+
+
+Import traces:
+  Client Component Browser:
+    ./outbounding_automation/apps/frontend/app/components/Sidebar.jsx [Client Component Browser]
+    ./outbounding_automation/apps/frontend/app/components/AppShell.jsx [Client Component Browser]
+    ./outbounding_automation/apps/frontend/app/components/AppShell.jsx [Server Component]
+    ./outbounding_automation/apps/frontend/app/layout.js [Server Component]
+
+  Client Component SSR:
+    ./outbounding_automation/apps/frontend/app/components/Sidebar.jsx [Client Component SSR]
+    ./outbounding_automation/apps/frontend/app/components/AppShell.jsx [Client Component SSR]
+    ./outbounding_automation/apps/frontend/app/components/AppShell.jsx [Server Component]
+    ./outbounding_automation/apps/frontend/app/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./outbounding_automation/apps/frontend/app/page.js:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import { useState } from "react";
+  4 | import Link from "next/link";
+> 5 | import { Sparkles, Plus, MoreVertical } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | // plantillas de ejemplo (hardcoded por ahora)
+  8 | const plantillas = [
+
+
+
+Import traces:
+  Client Component Browser:
+    ./outbounding_automation/apps/frontend/app/page.js [Client Component Browser]
+    ./outbounding_automation/apps/frontend/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./outbounding_automation/apps/frontend/app/page.js [Client Component SSR]
+    ./outbounding_automation/apps/frontend/app/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:18.571] Browser ERROR   uncaughtError: Error: ./outbounding_automation/apps/frontend/app/components/ChatPanel.jsx:4:1
+Module not found: Can't resolve 'lucide-react'
+  2 |
+  3 | import { useState, useRef, useEffect } from "react";
+> 4 | import { Send, Loader2 } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | const BACKEND_URL = "http://localhost:4000";
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./outbounding_automation/apps/frontend/app/components/ChatPanel.jsx [Client Component Browser]
+    ./outbounding_automation/apps/frontend/app/message/[id]/page.js [Client Component Browser]
+    ./outbounding_automation/apps/frontend/app/message/[id]/page.js [Server Component]
+
+  Client Component SSR:
+    ./outbounding_automation/apps/frontend/app/components/ChatPanel.jsx [Client Component SSR]
+    ./outbounding_automation/apps/frontend/app/message/[id]/page.js [Client Component SSR]
+    ./outbounding_automation/apps/frontend/app/message/[id]/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:18.602] Browser ERROR   ./outbounding_automation/apps/frontend/app/components/ChatPanel.jsx:4:1
+Module not found: Can't resolve 'lucide-react'
+  2 |
+  3 | import { useState, useRef, useEffect } from "react";
+> 4 | import { Send, Loader2 } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | const BACKEND_URL = "http://localhost:4000";
+  7 |
+
+Import traces:
+  Client Component Browser:
+    ./outbounding_automation/apps/frontend/app/components/ChatPanel.jsx [Client Component Browser]
+    ./outbounding_automation/apps/frontend/app/message/[id]/page.js [Client Component Browser]
+    ./outbounding_automation/apps/frontend/app/message/[id]/page.js [Server Component]
+
+  Client Component SSR:
+    ./outbounding_automation/apps/frontend/app/components/ChatPanel.jsx [Client Component SSR]
+    ./outbounding_automation/apps/frontend/app/message/[id]/page.js [Client Component SSR]
+    ./outbounding_automation/apps/frontend/app/message/[id]/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:04:18.602] Browser ERROR   ./outbounding_automation/apps/frontend/app/components/Navbar.jsx:3:1
+Module not found: Can't resolve 'lucide-react'
+  1 | "use client";
+  2 |
+> 3 | import { Bell, Plus, ChevronDown, Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { useState } from "react";
+  5 |
+  6 | export default function Navbar() {
+
+Import traces:
+  Client Component Browser:
+    ./outbounding_automation/apps/frontend/app/components/Navbar.jsx [Client Component Browser]
+    ./outbounding_automation/apps/frontend/app/components/AppShell.jsx [Client Component Browser]
+    ./outbounding_automation/apps/frontend/app/components/AppShell.jsx [Server Component]
+    ./outbounding_automation/apps/frontend/app/layout.js [Server Component]
+
+  Client Component SSR:
+    ./outbounding_automation/apps/frontend/app/components/Navbar.jsx [Client Component SSR]
+    ./outbounding_automation/apps/frontend/app/components/AppShell.jsx [Client Component SSR]
+    ./outbounding_automation/apps/frontend/app/components/AppShell.jsx [Server Component]
+    ./outbounding_automation/apps/frontend/app/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:04:18.602] Browser ERROR   ./outbounding_automation/apps/frontend/app/components/Sidebar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+   3 | import Link from "next/link";
+   4 | import { usePathname } from "next/navigation";
+>  5 | import {
+     | ^^^^^^^^
+>  6 |   Home, CalendarDays, FileText, Megaphone,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  7 |   BarChart3, Building2, Settings, LayoutGrid, HelpCircle,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  8 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | // navegacion principal del sidebar
+  11 | const navItems = [
+
+Import traces:
+  Client Component Browser:
+    ./outbounding_automation/apps/frontend/app/components/Sidebar.jsx [Client Component Browser]
+    ./outbounding_automation/apps/frontend/app/components/AppShell.jsx [Client Component Browser]
+    ./outbounding_automation/apps/frontend/app/components/AppShell.jsx [Server Component]
+    ./outbounding_automation/apps/frontend/app/layout.js [Server Component]
+
+  Client Component SSR:
+    ./outbounding_automation/apps/frontend/app/components/Sidebar.jsx [Client Component SSR]
+    ./outbounding_automation/apps/frontend/app/components/AppShell.jsx [Client Component SSR]
+    ./outbounding_automation/apps/frontend/app/components/AppShell.jsx [Server Component]
+    ./outbounding_automation/apps/frontend/app/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:04:18.602] Browser ERROR   ./outbounding_automation/apps/frontend/app/components/TagsPanel.jsx:4:1
+Module not found: Can't resolve 'lucide-react'
+  2 |
+  3 | import { useState } from "react";
+> 4 | import { Sparkles, ChevronDown, ChevronRight } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | const opcionesTono = [
+  7 |   { valor: "urgente", label: "Urgente", desc: "Crea sentido de urgencia para actuar rapido" },
+
+Import traces:
+  Client Component Browser:
+    ./outbounding_automation/apps/frontend/app/components/TagsPanel.jsx [Client Component Browser]
+    ./outbounding_automation/apps/frontend/app/message/[id]/page.js [Client Component Browser]
+    ./outbounding_automation/apps/frontend/app/message/[id]/page.js [Server Component]
+
+  Client Component SSR:
+    ./outbounding_automation/apps/frontend/app/components/TagsPanel.jsx [Client Component SSR]
+    ./outbounding_automation/apps/frontend/app/message/[id]/page.js [Client Component SSR]
+    ./outbounding_automation/apps/frontend/app/message/[id]/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:04:18.602] Browser ERROR   ./outbounding_automation/apps/frontend/app/message/[id]/page.js:6:1
+Module not found: Can't resolve 'lucide-react'
+  4 | import { useParams } from "next/navigation";
+  5 | import Link from "next/link";
+> 6 | import { ArrowLeft, Sparkles, Send } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import ChatPanel from "../../components/ChatPanel";
+  8 | import TagsPanel from "../../components/TagsPanel";
+  9 |
+
+Import traces:
+  Client Component Browser:
+    ./outbounding_automation/apps/frontend/app/message/[id]/page.js [Client Component Browser]
+    ./outbounding_automation/apps/frontend/app/message/[id]/page.js [Server Component]
+
+  Client Component SSR:
+    ./outbounding_automation/apps/frontend/app/message/[id]/page.js [Client Component SSR]
+    ./outbounding_automation/apps/frontend/app/message/[id]/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:04:18.602] Browser ERROR   ./outbounding_automation/apps/frontend/app/components/Navbar.jsx:3:1
+Module not found: Can't resolve 'lucide-react'
+  1 | "use client";
+  2 |
+> 3 | import { Bell, Plus, ChevronDown, Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { useState } from "react";
+  5 |
+  6 | export default function Navbar() {
+
+Import traces:
+  Client Component Browser:
+    ./outbounding_automation/apps/frontend/app/components/Navbar.jsx [Client Component Browser]
+    ./outbounding_automation/apps/frontend/app/components/AppShell.jsx [Client Component Browser]
+    ./outbounding_automation/apps/frontend/app/components/AppShell.jsx [Server Component]
+    ./outbounding_automation/apps/frontend/app/layout.js [Server Component]
+
+  Client Component SSR:
+    ./outbounding_automation/apps/frontend/app/components/Navbar.jsx [Client Component SSR]
+    ./outbounding_automation/apps/frontend/app/components/AppShell.jsx [Client Component SSR]
+    ./outbounding_automation/apps/frontend/app/components/AppShell.jsx [Server Component]
+    ./outbounding_automation/apps/frontend/app/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:04:18.602] Browser ERROR   ./outbounding_automation/apps/frontend/app/components/Sidebar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+   3 | import Link from "next/link";
+   4 | import { usePathname } from "next/navigation";
+>  5 | import {
+     | ^^^^^^^^
+>  6 |   Home, CalendarDays, FileText, Megaphone,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  7 |   BarChart3, Building2, Settings, LayoutGrid, HelpCircle,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  8 | } from "lucide-react";
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | // navegacion principal del sidebar
+  11 | const navItems = [
+
+Import traces:
+  Client Component Browser:
+    ./outbounding_automation/apps/frontend/app/components/Sidebar.jsx [Client Component Browser]
+    ./outbounding_automation/apps/frontend/app/components/AppShell.jsx [Client Component Browser]
+    ./outbounding_automation/apps/frontend/app/components/AppShell.jsx [Server Component]
+    ./outbounding_automation/apps/frontend/app/layout.js [Server Component]
+
+  Client Component SSR:
+    ./outbounding_automation/apps/frontend/app/components/Sidebar.jsx [Client Component SSR]
+    ./outbounding_automation/apps/frontend/app/components/AppShell.jsx [Client Component SSR]
+    ./outbounding_automation/apps/frontend/app/components/AppShell.jsx [Server Component]
+    ./outbounding_automation/apps/frontend/app/layout.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:04:18.602] Browser ERROR   ./outbounding_automation/apps/frontend/app/page.js:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import { useState } from "react";
+  4 | import Link from "next/link";
+> 5 | import { Sparkles, Plus, MoreVertical } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | // plantillas de ejemplo (hardcoded por ahora)
+  8 | const plantillas = [
+
+Import traces:
+  Client Component Browser:
+    ./outbounding_automation/apps/frontend/app/page.js [Client Component Browser]
+    ./outbounding_automation/apps/frontend/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./outbounding_automation/apps/frontend/app/page.js [Client Component SSR]
+    ./outbounding_automation/apps/frontend/app/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
